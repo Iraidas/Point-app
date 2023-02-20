@@ -1,15 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Point app</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper"> 
+          <div class="header__logo"><img class="header__logo-img" src="images/Point-logo.svg" alt="Logo Poing app" width="105" height="48"></div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item"><a class="header__list-link" href="#">О приложении</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#">Преимущества</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#">Наши психологи</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#">Скачать приложение</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="preview">
+          <div class="container">
+            <div class="preview__wrapper"> 
+              <div class="preview__caption">
+                <h1 class="preview__title">Связь с психологом, <span class="blue-text-color">когда она необходима</span></h1>
+                <p>Аудио- и видеоконсультации в одном удобном приложении</p>
+                <div class="preview__link"><a class="preview__link-text" href="#">Выбрать специалиста</a></div>
+                <div class="preview__link"> <a class="preview__link-text" href="#">Попробовать бесплатно</a></div>
+              </div>
+              <video class="preview__video">
+                <source src="images/point.mp4">
+              </video>
+            </div>
+          </div>
+        </section>
+        <section class="easy">
+          <div class="container"> 
+            <div class="easy__wrapper">
+              <div class="easy__step">
+                <div class="easy__step-description">
+                  <h2 class="easy__title">Удобно <span class="blue-text-color">и просто</span></h2>
+                  <p class="easy__caption">Point — это современное приложение, в котором вы можете получить психологическую поддержку, когда и где вам удобно.</p>
+                  <h3 class="easy__subtitle">Установите приложение</h3>
+                  <p class="easy__subtitle-caption">Скачайте приложение на ваш смартфон и пройдите быструю регистрацию.</p>
+                  <div class="easy__links"><img class="easy__link" src="images/app-store.png" alt="App Store link" width="200" height="60"><img class="easy__link" src="images/google-play.png" alt="Google Play link" width="200" height="60"></div>
+                </div>
+                <div class="easy__step-images"><img class="step-img" src="images/iPhone_bg-1.png" alt="iPhone background image" width="240" height="615"></div>
+              </div>
+              <div class="easy__step">
+                <div class="easy__step-description">
+                  <h3 class="easy__subtitle">Выберите специалиста</h3>
+                  <p class="easy__subtitle-caption">Просматривайте профили психологов и выбирайте наиболее подходящих по квалификации, рейтингу, цене и запросам, с которыми они работают.</p>
+                </div>
+                <div class="easy__step-images"><img class="step-img" src="images/iPhone_bg-2.png" alt="iPhone background image" width="240" height="615"></div>
+              </div>
+              <div class="easy__step">
+                <div class="easy__step-description">
+                  <h3 class="easy__subtitle">Позвоните психологу</h3>
+                  <p class="easy__subtitle-caption">Если психолог онлайн, значит он готов помочь сейчас, без предварительной договоренности и согласования.</p>
+                  <div class="easy__links"><img class="easy__link" src="images/app-store.png" alt="App Store link" width="200" height="60"><img class="easy__link" src="images/google-play.png" alt="Google Play link" width="200" height="60"></div>
+                </div>
+                <div class="easy__step-images"><img class="step-img" src="images/iPhone_bg-3.png" alt="iPhone background image" width="240" height="615"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="requests">
+          <div class="container"> 
+            <div class="requests__wrapper"> 
+              <h2 class="requests__title">С какими запросами обращаются в <span class="blue-text-color">Point?</span></h2>
+              <dl class="requests__list">
+                <dt class="requests__list-item"> <img class="requests__list-item-img" src="images/request_image-1.svg" alt="request image" width="320" height="330">
+                  <p>Депрессия и тревожность</p>
+                </dt>
+                <dd class="requests__list-item-caption">Вы сможете определить причины беспокойства, преодолеть депрессию, тревогу и подавленость</dd>
+                <dt class="requests__list-item"> <img class="requests__list-item-img" src="images/request_image-2.svg" alt="request image" width="320" height="330">
+                  <p>Переживания и стрессы</p>
+                </dt>
+                <dd class="requests__list-item-caption">В ходе консультаций вы научитесь справляться со стрессовыми ситуациями и стабилизуете ваше эмоциональное состояние</dd>
+                <dt class="requests__list-item"> <img class="requests__list-item-img" src="images/request_image-3.svg" alt="request image" width="320" height="330">
+                  <p>Поиски себя</p>
+                </dt>
+                <dd class="requests__list-item-caption">Специалист поможет вам найти свое призвание, подскажет, как понимать и реализовывать свои желания</dd>
+                <dt class="requests__list-item"> <img class="requests__list-item-img" src="images/request_image-4.svg" alt="request image" width="320" height="330">
+                  <p>Работа и карьера</p>
+                </dt>
+                <dd class="requests__list-item-caption">Консультации с психологом дадут понимание, как правильно строить рабочий процесс для максимального комфорта и продуктивности</dd>
+                <dt class="requests__list-item"> <img class="requests__list-item-img" src="images/request_image-5.svg" alt="request image" width="320" height="330">
+                  <p>Отношения с близкими</p>
+                </dt>
+                <dd class="requests__list-item-caption">В результате консультаций вы научитесь выстраивать комфортные взаимоотношения с партнером, друзьями и родными</dd>
+                <dt class="requests__list-item"> <img class="requests__list-item-img" src="images/request_image-6.svg" alt="request image" width="320" height="330">
+                  <p>Воспитание детей</p>
+                </dt>
+                <dd class="requests__list-item-caption">Психолог подскажет, как решить компромиссную ситуацию с ребенком и достичь гармонии в общении с ним</dd>
+              </dl><a class="requests__link" href="#"> </a>
+              <p class="requests__link-caption">* Первые 10 минут консультации бесплатно</p>
+            </div>
+          </div>
+        </section>
+        <section class="superiority">
+          <div class="container"> 
+            <div class="superiority__wrapper">
+              <h2 class="superiority__title">Чем Point лучше <span class="blue-text-color">других сервисов и сайтов?</span></h2>
+              <ul class="superiority__list">
+                <li class="superiority__list-item"> <img class="superiority__list-item-img" src="images/superiority_image-1.svg" alt="superiority image" width="120" height="128">
+                  <div class="caption"> 
+                    <p class="superiority__list-item-title">Посекундная тарификация</p>
+                    <p>Платите только за то время, которое вы использовали. Это может быть как полноценная 50-минутная консультация, так и вопрос, на решение которого понадобится всего 15-20 минут.</p>
+                  </div>
+                </li>
+                <li class="superiority__list-item"> <img class="superiority__list-item-img" src="images/superiority_image-2.svg" alt="superiority image" width="120" height="128">
+                  <div class="caption"> 
+                    <p class="superiority__list-item-title">Мгновенная поддержка</p>
+                    <p>Если специалист онлайн, значит он готов к консультации. Просто позвоните ему и получите моментальный ответ.</p>
+                  </div>
+                </li>
+                <li class="superiority__list-item"> <img class="superiority__list-item-img" src="images/superiority_image-3.svg" alt="superiority image" width="120" height="128">
+                  <div class="caption"> 
+                    <p class="superiority__list-item-title">Удобный формат связи</p>
+                    <p>Аудио- и видеоконсультации — наиболее оптимальный вариант для решения большинства психологических проблем.</p>
+                  </div>
+                </li>
+                <li class="superiority__list-item"> <img class="superiority__list-item-img" src="images/superiority_image-4.svg" alt="superiority image" width="120" height="128">
+                  <div class="caption"> 
+                    <p class="superiority__list-item-title">Проверенные специалисты</p>
+                    <p>Мы сотрудничаем только с профессиональными дипломированными психологами, которые прошли тщательную проверку. </p>
+                  </div>
+                </li>
+                <li class="superiority__list-item"> <img class="superiority__list-item-img" src="images/superiority_image-5.svg" alt="superiority image" width="120" height="128">
+                  <div class="caption"> 
+                    <p class="superiority__list-item-title">Легкий выбор</p>
+                    <p>Вы легко сможете подобрать подходящего специалиста по рейтингу, цене, квалификации, опыту и запросам, с которыми он работает.</p>
+                  </div>
+                </li>
+                <li class="superiority__list-item"> <img class="superiority__list-item-img" src="images/superiority_image-6.svg" alt="superiority image" width="120" height="128">
+                  <div class="caption"> 
+                    <p class="superiority__list-item-title">Оплата после консультации</p>
+                    <p>После звонка вы сможете оплатить консультацию удобным для вас способом.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="container">
+            <div class="promo__wrapper"> 
+              <h2 class="promo__title">Попробуйте <span class="blue-text-color">бесплатно</span></h2>
+              <p>Скачайте Point и получите первые 10 бесплатных минут с каждым специалистом. За это время вы успеете донести свою проблему, узнать, сможет ли психолог помочь в вашем запросе и получить первое впечатление от общения. </p>
+              <p>Если за первые 10 минут вы понимаете, что специалист вам не подходит, просто положите трубку и выберите другого психолога.</p>
+              <div class="promo__image-group"> <img class="promo__image" src="images/promo_iPhones.png" alt="iPhones" width="583" height="492">
+                <div class="promo__image-links"><img class="promo__image-link" src="images/app-store.png" alt="App Store link" width="200" height="60"><img class="promo__image-link" src="images/google-play.png" alt="Google Play link" width="200" height="60"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="formats">
+          <div class="caption"> 
+            <div class="formats__wrapper">
+              <h2 class="formats__title">Два формата <span class="dark-blue-text-color">онлайн-консультаций</span></h2>
+              <div class="formats__item"><img class="formats__item-img" src="images/formats_iPhone-1.png" alt="video call iPhone" width="302" height="598">
+                <h3 class="formats__item-title">Видеозвонок</h3>
+                <p class="formats__item-caption">Получите видеоконсультацию в Point без установки дополнительных приложений для онлайн-конференций.</p>
+              </div>
+              <div class="formats__item"><img class="formats__item-img" src="images/formats_iPhone-2.png" alt="audio call iPhone" width="302" height="598">
+                <h3 class="formats__item-title">Аудиозвонок</h3>
+                <p class="formats__item-caption">Позвоните специалисту анонимно, без видео и получите исчерпывающую консультацию.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-psychologists">
+          <div class="caption"> 
+            <div class="our-psychologists__wrapper">
+              <h2 class="our-psychologists__title">Наши <span class="blue-text-color">психологи</span></h2>
+              <p class="our-psychologists__text">В Point вас проконсультируют профессиональные психологи Украинской ассоциации экологичной психологической помощи</p>
+              <div class="our-psychologists__caption"> <img class="our-psychologists__caption-img" src="images/group-therapy.png" alt="group therapy images" width="580" height="376">
+                <p>Все представители сообщества являются профессиональными психологами (преподаватели, ученые, практики), прошли полный курс обучения в Школе экофасилитации и получили аккредитацию в Украинской ассоциации экологичной психологической помощи. </p>
+                <p>Консультанты имеют убедительный опыт оказания эффективной психологической помощи в ситуациях различной степени сложности и направленности, постоянно повышают свою квалификацию в формате супервизий, интервизий.</p><a class="our-psychologists__link" href="#">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="caption"> 
+            <div class="advantages__wrapper">
+              <h2 class="advantages__title">Преимущества <span class="blue-text-color">сообщества</span></h2>
+              <dl class="advantages__list">
+                <dt class="advantages__list-item"> <img class="advantages__list-item-img" src="images/advantages_img-1.svg" alt="" width="120" height="128">
+                  <p>Потенциал</p>
+                </dt>
+                <dd class="advantages__list-item-caption">Работаем не столько с проблемой, сколько с раскрытием потенцияла личности.</dd>
+                <dt class="advantages__list-item"> <img class="advantages__list-item-img" src="images/advantages_img-2.svg" alt="" width="120" height="128">
+                  <p>Эффективное взаимодействие</p>
+                </dt>
+                <dd class="advantages__list-item-caption">Для достижения существенного эффекта помощи требуется 1 консультация (50 мин), в отдельных ситуациях — до 3-х консультаций.</dd>
+                <dt class="advantages__list-item"> <img class="advantages__list-item-img" src="images/advantages_img-3.svg" alt="" width="120" height="128">
+                  <p>Профессионализм</p>
+                </dt>
+                <dd class="advantages__list-item-caption">Все специалисты, представленные на странице сообщества — профессионалы и прошли аккредитацию ассоциации экологичной психологической помощи</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+        <section class="guarantees">
+          <div class="caption"> 
+            <div class="guarantees__wrapper">
+              <h2 class="guarantees__title"></h2>
+            </div>
+          </div>
+        </section>
+        <section class="question-answer">
+          <div class="caption"> 
+            <div class="question-answer__wrapper">
+              <h2 class="question-answer__title"></h2>
+            </div>
+          </div>
+        </section>
+        <section class="care-service">
+          <div class="caption"> 
+            <div class="care-service__wrapper">
+              <h2 class="care-service__title"></h2>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="caption"> 
+            <div class="promo__wrapper">
+              <h2 class="promo__title"></h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="footer"></footer>
     <script src="js/main.min.js"></script>
   </body>

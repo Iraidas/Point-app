@@ -81,6 +81,7 @@ function build() {
         'app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
+        'app/video/**/*',
         'app/**/*.html'
     ], { base: 'app' })
         .pipe(dest('dist'))

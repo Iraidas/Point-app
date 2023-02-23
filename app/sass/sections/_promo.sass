@@ -1,0 +1,49 @@
+.promo
+    position: relative
+    padding-top: 70px
+    overflow: hidden
+    &::before
+        content: ''
+        z-index: -1
+        position: absolute
+        width: 90%
+        top: 80px
+        height: 90%
+        right: 0
+        left: 40px
+        background-image: url('../images/promo_bg.svg')
+        background-repeat: no-repeat
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+    &__wrapper
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        max-height: 600px
+        justify-content: center
+        align-items: flex-start
+        align-content: space-between
+    &__text 
+        max-width: 470px
+        padding-top: 25px
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        &:nth-of-type(1)
+            @extend %body-text
+        &:nth-of-type(2)
+            @extend %gray-text
+    &__title
+        @extend %title-font
+        padding-top: 150px
+        font-size: 40px
+    &__image-links
+        align-self: center
+        margin-top: 30px
+    &__link
+        margin-right: 15px
+    &__link-img
+        &:hover
+            transform: scale(1.03, 1.03) 
+

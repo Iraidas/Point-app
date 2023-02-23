@@ -30,12 +30,12 @@ html(lang="ru")
                             .preview__caption
                                 h1.preview__title Связь с психологом, <span class="blue-text-color">когда она необходима</span>
                                 p Аудио- и видеоконсультации в одном удобном приложении
-                                .preview__link
-                                    a.preview__link-text(href="#") Выбрать специалиста
-                                .preview__link 
-                                    a.preview__link-text(href="#") Попробовать бесплатно
-                            video.preview__video
-                                source(src="images/point.mp4")
+                                a.preview__link(href="#") Выбрать специалиста
+                                a.preview__link(href="#") Попробовать бесплатно
+                            .preview__player
+                                video.preview__video(poster="images/poster_video.png")
+                                    source.preview__sorce(src="video/point.mp4", type="video/mp4")
+                                button.preview__video-mute-button(type="button")
                 section.easy
                     .container 
                         .easy__wrapper
@@ -46,56 +46,63 @@ html(lang="ru")
                                     h3.easy__subtitle Установите приложение
                                     p.easy__subtitle-caption Скачайте приложение на ваш смартфон и пройдите быструю регистрацию.
                                     .easy__links
-                                        img.easy__link(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
-                                        img.easy__link(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
+                                        a.easy__link(href="#") 
+                                            img.easy__link-img(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
+                                        a.easy__link(href="#") 
+                                            img.easy__link-img(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
                                 .easy__step-images
-                                    img.step-img(src="images/iPhone_bg-1.png", alt="Айфон", width="240", height="615")
+                                    img.easy__step-img(src="images/iPhone_bg-1.png", alt="Айфон", width="240", height="615")
                             .easy__step
                                 .easy__step-description
                                     h3.easy__subtitle Выберите специалиста
                                     p.easy__subtitle-caption Просматривайте профили психологов и выбирайте наиболее подходящих по квалификации, рейтингу, цене и запросам, с которыми они работают.
                                 .easy__step-images
-                                    img.step-img(src="images/iPhone_bg-2.png", alt="Айфон", width="240", height="615")
+                                    img.easy__step-img(src="images/iPhone_bg-2.png", alt="Айфон", width="240", height="615")
                             .easy__step
                                 .easy__step-description
                                     h3.easy__subtitle Позвоните психологу
                                     p.easy__subtitle-caption Если психолог онлайн, значит он готов помочь сейчас, без предварительной договоренности и согласования.
                                     .easy__links
-                                        img.easy__link(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
-                                        img.easy__link(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
+                                        a.easy__link(href="#") 
+                                            img.easy__link-img(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
+                                        a.easy__link(href="#") 
+                                            img.easy__link-img(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
                                 .easy__step-images
-                                    img.step-img(src="images/iPhone_bg-3.png", alt="Айфон", width="240", height="615")
+                                    img.easy__step-img(src="images/iPhone_bg-3.png", alt="Айфон", width="240", height="615")
                 section.requests
-                    .container 
-                        .requests__wrapper 
-                            h2.requests__title С какими запросами обращаются в <span class="blue-text-color">Point?</span>
-                            dl.requests__list
-                                dt.requests__list-item 
-                                    img.requests__list-item-img(src="images/request_image-1.png", alt="Иконка депрессия", width="320", height="330")
-                                    p Депрессия и тревожность
-                                dd.requests__list-item-caption Вы сможете определить причины беспокойства, преодолеть депрессию, тревогу и подавленость
-                                dt.requests__list-item 
-                                    img.requests__list-item-img(src="images/request_image-2.png", alt="Иконка переживания", width="320", height="330")
-                                    p Переживания и стрессы
-                                dd.requests__list-item-caption В ходе консультаций вы научитесь справляться со стрессовыми ситуациями и стабилизуете ваше эмоциональное состояние
-                                dt.requests__list-item 
-                                    img.requests__list-item-img(src="images/request_image-3.png", alt="Иконка поиски", width="320", height="330")
-                                    p Поиски себя
-                                dd.requests__list-item-caption Специалист поможет вам найти свое призвание, подскажет, как понимать и реализовывать свои желания
-                                dt.requests__list-item 
-                                    img.requests__list-item-img(src="images/request_image-4.png", alt="Иконка работа", width="320", height="330")
-                                    p Работа и карьера
-                                dd.requests__list-item-caption Консультации с психологом дадут понимание, как правильно строить рабочий процесс для максимального комфорта и продуктивности
-                                dt.requests__list-item 
-                                    img.requests__list-item-img(src="images/request_image-5.png", alt="Иконка отношения", width="320", height="330")
-                                    p Отношения с близкими
-                                dd.requests__list-item-caption В результате консультаций вы научитесь выстраивать комфортные взаимоотношения с партнером, друзьями и родными
-                                dt.requests__list-item 
-                                    img.requests__list-item-img(src="images/request_image-6.png", alt="Иконка воспитание", width="320", height="330")
-                                    p Воспитание детей
-                                dd.requests__list-item-caption Психолог подскажет, как решить компромиссную ситуацию с ребенком и достичь гармонии в общении с ним
-                            a.requests__link(href="#") 
-                            p.requests__link-caption * Первые 10 минут консультации бесплатно
+                    .requests__wrapper 
+                        .requests__box
+                            .container
+                                h2.requests__title С какими запросами обращаются в <span class="blue-text-color">Point?</span>
+                                ul.requests__list
+                                    li.requests__list-item 
+                                        img.requests__list-item-img(src="images/request_image-1.svg", alt="Иконка депрессия", width="320", height="330")
+                                        h3 Депрессия и тревожность
+                                        p.requests__list-item-caption Вы сможете определить причины беспокойства, преодолеть депрессию, тревогу и подавленость
+                                    li.requests__list-item 
+                                        img.requests__list-item-img(src="images/request_image-2.svg", alt="Иконка переживания", width="320", height="330")
+                                        h3 Переживания и стрессы
+                                        p.requests__list-item-caption В ходе консультаций вы научитесь справляться со стрессовыми ситуациями и стабилизуете ваше эмоциональное состояние
+                                    li.requests__list-item 
+                                        img.requests__list-item-img(src="images/request_image-3.svg", alt="Иконка поиски", width="320", height="330")
+                                        h3 Поиски себя
+                                        p.requests__list-item-caption Специалист поможет вам найти свое призвание, подскажет, как понимать и реализовывать свои желания
+                                    li.requests__list-item 
+                                        img.requests__list-item-img(src="images/request_image-4.svg", alt="Иконка работа", width="320", height="330")
+                                        h3 Работа и карьера
+                                        p.requests__list-item-caption Консультации с психологом дадут понимание, как правильно строить рабочий процесс для максимального комфорта и продуктивности
+                                    li.requests__list-item 
+                                        img.requests__list-item-img(src="images/request_image-5.svg", alt="Иконка отношения", width="320", height="330")
+                                        h3 Отношения с близкими
+                                        p.requests__list-item-caption В результате консультаций вы научитесь выстраивать комфортные взаимоотношения с партнером, друзьями и родными
+                                    li.requests__list-item 
+                                        img.requests__list-item-img(src="images/request_image-6.svg", alt="Иконка воспитание", width="320", height="330")
+                                        h3 Воспитание детей
+                                        p.requests__list-item-caption Психолог подскажет, как решить компромиссную ситуацию с ребенком и достичь гармонии в общении с ним
+                        .requests__links
+                            .container
+                                a.requests__link(href="#") Хочу решить свою ситуацию *
+                                p.requests__link-caption * Первые 10 минут консультации бесплатно
                 section.superiority
                     .container 
                         .superiority__wrapper
@@ -103,55 +110,56 @@ html(lang="ru")
                             ul.superiority__list
                                 li.superiority__list-item 
                                     img.superiority__list-item-img(src="images/superiority_image-1.svg", alt="Таймер", width="120", height="128")
-                                    .caption 
+                                    .superiority__list-item-caption 
                                         h3.superiority__list-item-title Посекундная тарификация
                                         p Платите только за то время, которое вы использовали. Это может быть как полноценная 50-минутная консультация, так и вопрос, на решение которого понадобится всего 15-20 минут.
                                 li.superiority__list-item 
                                     img.superiority__list-item-img(src="images/superiority_image-2.svg", alt="Часы", width="120", height="128")
-                                    .caption 
+                                    .superiority__list-item-caption 
                                         h3.superiority__list-item-title Мгновенная поддержка
                                         p Если специалист онлайн, значит он готов к консультации. Просто позвоните ему и получите моментальный ответ.
                                 li.superiority__list-item 
                                     img.superiority__list-item-img(src="images/superiority_image-3.svg", alt="Микрофон", width="120", height="128")
-                                    .caption 
+                                    .superiority__list-item-caption 
                                         h3.superiority__list-item-title Удобный формат связи
                                         p Аудио- и видеоконсультации — наиболее оптимальный вариант для решения большинства психологических проблем.
                                 li.superiority__list-item 
                                     img.superiority__list-item-img(src="images/superiority_image-4.svg", alt="Специалист", width="120", height="128")
-                                    .caption 
+                                    .superiority__list-item-caption 
                                         h3.superiority__list-item-title Проверенные специалисты
                                         p Мы сотрудничаем только с профессиональными дипломированными психологами, которые прошли тщательную проверку. 
                                 li.superiority__list-item 
                                     img.superiority__list-item-img(src="images/superiority_image-5.svg", alt="Фильтр", width="120", height="128")
-                                    .caption 
+                                    .superiority__list-item-caption 
                                         h3.superiority__list-item-title Легкий выбор
                                         p Вы легко сможете подобрать подходящего специалиста по рейтингу, цене, квалификации, опыту и запросам, с которыми он работает.
                                 li.superiority__list-item 
                                     img.superiority__list-item-img(src="images/superiority_image-6.svg", alt="Деньги", width="120", height="128")
-                                    .caption 
+                                    .superiority__list-item-caption 
                                         h3.superiority__list-item-title Оплата после консультации
                                         p После звонка вы сможете оплатить консультацию удобным для вас способом.
                 section.promo
                     .container
                         .promo__wrapper 
                             h2.promo__title Попробуйте <span class="blue-text-color">бесплатно</span>
-                            p Скачайте Point и получите первые 10 бесплатных минут с каждым специалистом. За это время вы успеете донести свою проблему, узнать, сможет ли психолог помочь в вашем запросе и получить первое впечатление от общения. 
-                            p Если за первые 10 минут вы понимаете, что специалист вам не подходит, просто положите трубку и выберите другого психолога.
-                            .promo__image-group 
-                                img.promo__image(src="images/promo_iPhones.png", alt="Айфоны", width="583", height="492")
-                                .promo__image-links
-                                    img.promo__image-link(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
-                                    img.promo__image-link(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
+                            p.promo__text Скачайте Point и получите первые 10 бесплатных минут с каждым специалистом. За это время вы успеете донести свою проблему, узнать, сможет ли психолог помочь в вашем запросе и получить первое впечатление от общения. 
+                            p.promo__text Если за первые 10 минут вы понимаете, что специалист вам не подходит, просто положите трубку и выберите другого психолога.
+                            img.promo__image(src="images/promo_iPhones.png", alt="Айфоны", width="583", height="412")
+                            .promo__image-links
+                                a.promo__link(href="#") 
+                                    img.promo__link-img(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
+                                a.promo__link(href="#") 
+                                    img.promo__link-img(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
                 section.formats
                     .container 
+                        h2.formats__title Два формата <span class="dark-blue-text-color">онлайн-консультаций</span>
                         .formats__wrapper
-                            h2.formats__title Два формата <span class="dark-blue-text-color">онлайн-консультаций</span>
                             .formats__item
                                 img.formats__item-img(src="images/formats_iPhone-1.png", alt="Видеозвонок", width="302", height="598")
                                 h3.formats__item-title Видеозвонок
-                                p.formats__item-caption Получите видеоконсультацию в Point без установки дополнительных приложений для онлайн-конференций.
+                                p.formats__item-caption Получите видеоконсультацию в Point без установки дополнительных приложений для онлайн- конференций.
                             .formats__item
-                                img.formats__item-img(src="images/formats_iPhone-2.png", alt="Аудиозвонок", width="302", height="598")
+                                img.formats__item-img(src="images/formats_iPhone-2.png", alt="Аудиозвонок", width="332", height="618")
                                 h3.formats__item-title Аудиозвонок
                                 p.formats__item-caption Позвоните специалисту анонимно, без видео и получите исчерпывающую консультацию.
                 section.our-psychologists
@@ -315,13 +323,16 @@ html(lang="ru")
                 section.promo
                     .container 
                         .promo__wrapper
-                            h2.promo__title Сделайте <span class="blue-text-color">пробный звонок</span>
-                            p Скачайте Point и получите первые 10 бесплатных минут с каждым специалистом. Этого времени хватит, чтобы донести вашу проблему и получить первые рекомендации от психолога.
-                            .promo__image-group 
-                                img.promo__image(src="images/promo_iPhones.png", alt="Айфоне", width="583", height="492")
-                                .promo__image-links
-                                    img.promo__image-link(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
-                                    img.promo__image-link(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
+                            h2.promo__title Сделайте 
+                                br
+                                <span class="blue-text-color">пробный звонок</span>
+                            p.promo__text Скачайте Point и получите первые <b>10 бесплатных минут</b> с каждым специалистом. Этого времени хватит, чтобы донести вашу проблему и получить первые рекомендации от психолога.
+                            img.promo__image(src="images/promo_iPhones.png", alt="Айфоне", width="583", height="412")
+                            .promo__image-links
+                                a.promo__link(href="#") 
+                                    img.promo__link-img(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
+                                a.promo__link(href="#") 
+                                    img.promo__link-img(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
         footer.footer
             .container
                 .footer__wrapper 

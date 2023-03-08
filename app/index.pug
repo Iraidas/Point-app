@@ -33,7 +33,7 @@ html(lang="ru")
                                 a.preview__link(href="#") Выбрать специалиста
                                 a.preview__link(href="#") Попробовать бесплатно
                             .preview__player
-                                video.preview__video(poster="images/poster_video.png")
+                                video.preview__video(poster="images/poster_video.png", width="594", height="362")
                                     source.preview__sorce(src="video/point.mp4", type="video/mp4")
                                 button.preview__video-mute-button(type="button")
                 section.easy
@@ -167,49 +167,54 @@ html(lang="ru")
                         .our-psychologists__wrapper
                             h2.our-psychologists__title Наши <span class="blue-text-color">психологи</span>
                             p.our-psychologists__text В Point вас проконсультируют профессиональные психологи Украинской ассоциации экологичной психологической помощи
-                            .our-psychologists__caption 
+                            .our-psychologists__caption
                                 img.our-psychologists__caption-img(src="images/group-therapy.png", alt="Изображение групповой терапии", width="580", height="376")
-                                p Все представители сообщества являются профессиональными психологами (преподаватели, ученые, практики), прошли полный курс обучения в Школе экофасилитации и получили аккредитацию в Украинской ассоциации экологичной психологической помощи. 
-                                p Консультанты имеют убедительный опыт оказания эффективной психологической помощи в ситуациях различной степени сложности и направленности, постоянно повышают свою квалификацию в формате супервизий, интервизий.
-                                a.our-psychologists__link(href="#") Узнать подробнее
+                                .our-psychologists__caption-text
+                                    p Все представители сообщества являются профессиональными психологами (преподаватели, ученые, практики), прошли полный курс обучения в Школе экофасилитации и получили аккредитацию в Украинской ассоциации экологичной психологической помощи. 
+                                    p Консультанты имеют убедительный опыт оказания эффективной психологической помощи в ситуациях различной степени сложности и направленности, постоянно повышают свою квалификацию в формате супервизий, интервизий.
+                                    a.our-psychologists__link(href="#") Узнать подробнее
                 section.advantages
-                    .container 
+                    .container
                         .advantages__wrapper
                             h2.advantages__title Преимущества <span class="blue-text-color">сообщества</span>
-                            dl.advantages__list
-                                dt.advantages__list-item 
+                            ul.advantages__list
+                                li.advantages__list-item
                                     img.advantages__list-item-img(src="images/advantages_img-1.svg", alt="Потенциал", width="120", height="128")
-                                    p Потенциал
-                                dd.advantages__list-item-caption Работаем не столько с проблемой, сколько с раскрытием потенцияла личности.
-                                dt.advantages__list-item 
+                                    h3.advantages__list-item-title Потенциал
+                                    p.advantages__list-item-caption Работаем не столько с проблемой, сколько с раскрытием потенцияла личности.
+                                li.advantages__list-item
                                     img.advantages__list-item-img(src="images/advantages_img-2.svg", alt="Часы", width="120", height="128")
-                                    p Эффективное взаимодействие
-                                dd.advantages__list-item-caption Для достижения существенного эффекта помощи требуется 1 консультация (50 мин), в отдельных ситуациях — до 3-х консультаций.
-                                dt.advantages__list-item 
+                                    h3.advantages__list-item-title Эффективное взаимодействие
+                                    p.advantages__list-item-caption Для достижения существенного эффекта помощи требуется 1 консультация (50 мин), в отдельных ситуациях — до 3-х консультаций.
+                                li.advantages__list-item
                                     img.advantages__list-item-img(src="images/advantages_img-3.svg", alt="Профессионализм", width="120", height="128")
-                                    p Профессионализм
-                                dd.advantages__list-item-caption Все специалисты, представленные на странице сообщества — профессионалы и прошли аккредитацию ассоциации экологичной психологической помощи
+                                    h3.advantages__list-item-title Профессионализм
+                                    p.advantages__list-item-caption Все специалисты, представленные на странице сообщества — профессионалы и прошли аккредитацию ассоциации экологичной психологической помощи
                 section.guarantees
                     .container 
                         .guarantees__wrapper
                             h2.guarantees__title Гарантии <span class="blue-text-color">сообщества</span>
-                            dl.guarantees__list
-                                dt.guarantees__list-item 
+                            ul.guarantees__list
+                                li.guarantees__list-item 
                                     img.guarantees__list-item-img(src="images/guarantees_img-1.svg", alt="Замок", width="120", height="128")
-                                    p Конфиденциальность
-                                dd.guarantees__list-caption Не передаем полученную от вас информацию третьим лицам.
-                                dt.guarantees__list-item 
+                                    .guarantees__list-item-caption
+                                        h3.guarantees__list-item-title Конфиденциальность
+                                        p.guarantees__list-item-caption Не передаем полученную от вас информацию третьим лицам.
+                                li.guarantees__list-item 
                                     img.guarantees__list-item-img(src="images/guarantees_img-2.svg", alt="Общение", width="120", height="128")
-                                    p Экологичное общение
-                                dd.guarantees__list-caption Опираемся на тот минимум информации, который вы готовы предоставить.
-                                dt.guarantees__list-item 
+                                    .guarantees__list-item-caption
+                                        h3.guarantees__list-item-title Экологичное общение
+                                        p.guarantees__list-item-caption Опираемся на тот минимум информации, который вы готовы предоставить.
+                                li.guarantees__list-item 
                                     img.guarantees__list-item-img(src="images/guarantees_img-3.svg", alt="Вопрос", width="120", height="128")
-                                    p Анонимность
-                                dd.guarantees__list-caption Уточняем только как к вам можно обращаться.
-                                dt.guarantees__list-item 
+                                    .guarantees__list-item-caption
+                                        h3.guarantees__list-item-title Анонимность
+                                        p.guarantees__list-item-caption Уточняем только как к вам можно обращаться.
+                                li.guarantees__list-item 
                                     img.guarantees__list-item-img(src="images/guarantees_img-4.svg", alt="Сердечко", width="120", height="128")
-                                    p Эмпатийное отношение
-                                dd.guarantees__list-caption Сочувствуем вам, сопереживаем с вами, слушаем и слышим вас.
+                                    .guarantees__list-item-caption
+                                        h3.guarantees__list-item-title Эмпатийное отношение
+                                        p.guarantees__list-item-caption Сочувствуем вам, сопереживаем с вами, слушаем и слышим вас.
                             .specialists
                                 .specialists__wrapper 
                                     .specialists__cards
@@ -223,11 +228,11 @@ html(lang="ru")
                                                 li.specialists__achievements-list-item Психология, экофасилитация
                                             .specialists__prices 
                                                 .specialists__price-per-hour
-                                                    p 12 грн / мин
-                                                    p Минута консультации
+                                                    p <span class="specialists__big-price">12</span> грн / мин
+                                                    p.specialists__price-gray Минута консультации
                                                 .specialists__price-per-minute
-                                                    p 600 грн / 50 мин
-                                                    p Полноценная консультация
+                                                    p <span class="specialists__big-price">600</span> грн / 50 мин
+                                                    p.specialists__price-gray Полноценная консультация
                                             .specialists__tags 
                                                 span.specialists__tag мышление
                                                 span.specialists__tag воспитание
@@ -246,11 +251,11 @@ html(lang="ru")
                                                 li.specialists__achievements-list-item Психология
                                             .specialists__prices 
                                                 .specialists__price-per-hour
-                                                    p 100 грн / мин
-                                                    p Минута консультации
+                                                    p <span class="specialists__big-price">100</span> грн / мин
+                                                    p.specialists__price-gray Минута консультации
                                                 .specialists__price-per-minute
-                                                    p 5000 грн / 50 мин
-                                                    p Полноценная консультация
+                                                    p <span class="specialists__big-price">5000</span> грн / 50 мин
+                                                    p.specialists__price-gray Полноценная консультация
                                             .specialists__tags 
                                                 span.specialists__tag мышление
                                                 span.specialists__tag воспитание
@@ -269,11 +274,11 @@ html(lang="ru")
                                                 li.specialists__achievements-list-item Психология, экофасилитация
                                             .specialists__prices 
                                                 .specialists__price-per-hour
-                                                    p 30 грн / мин
-                                                    p Минута консультации
+                                                    p <span class="specialists__big-price">30</span> грн / мин
+                                                    p.specialists__price-gray Минута консультации
                                                 .specialists__price-per-minute
-                                                    p 1500 грн / 50 мин
-                                                    p Полноценная консультация
+                                                    p <span class="specialists__big-price">1500</span> грн / 50 мин
+                                                    p.specialists__price-gray Полноценная консультация
                                             .specialists__tags 
                                                 span.specialists__tag мышление
                                                 span.specialists__tag воспитание
@@ -282,7 +287,7 @@ html(lang="ru")
                                                 span.specialists__tag переживания
                                                 span.specialists__tag депрессия
                                             a.specialists__card-link(href="#") Подробнее о специалисте
-                                a.specialists__link(href="#") 
+                                    a.specialists__link(href="#") Все специалисты
                 section.questions
                     .container 
                         .questions__wrapper
@@ -306,20 +311,24 @@ html(lang="ru")
                                 button.questions__accordion Соблюдается ли анонимность?
                                 .questions__panel
                                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magni ipsum rerum voluptatem ab. Ratione dolorum impedit minima ex, sequi adipisci temporibus voluptas, dolore amet nam alias nesciunt maiores quam?
+                                p.questions__line 
                 section.care-service
                     .container 
                         .care-service__wrapper
                             h2.care-service__title Задайте свой вопрос <span class="blue-text-color">службе заботы</span>
                             ul.care-service__list
                                 li.care-service__list-item 
-                                    img.care-service__list-img(src="images/viber_logo.png", alt="Логотип Viber", width="81", height="86")
-                                    a(href="#") Viber
+                                    a.care-service__list-item-link(href="#") 
+                                        img.care-service__list-img(src="images/viber_logo.png", alt="Логотип Viber", width="81", height="86")
+                                        p.care-service__list-item-link-text Viber
                                 li.care-service__list-item 
-                                    img.care-service__list-img(src="images/telegram_logo.png", alt="Логотип Telegram", width="81", height="86")
-                                    a(href="#") Telegram
+                                    a.care-service__list-item-link(href="#") 
+                                        img.care-service__list-img(src="images/telegram_logo.png", alt="Логотип Telegram", width="81", height="86")
+                                        p.care-service__list-item-link-text Telegram
                                 li.care-service__list-item 
-                                    img.care-service__list-img(src="images/whatsapp_logo.png", alt="Логотип Whatsapp", width="81", height="86")
-                                    a(href="#") WhatsApp
+                                    a.care-service__list-item-link(href="#") 
+                                        img.care-service__list-img(src="images/whatsapp_logo.png", alt="Логотип Whatsapp", width="81", height="86")
+                                        p.care-service__list-item-link-text WhatsApp
                 section.promo
                     .container 
                         .promo__wrapper
@@ -334,25 +343,24 @@ html(lang="ru")
                                 a.promo__link(href="#") 
                                     img.promo__link-img(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
         footer.footer
-            .container
-                .footer__wrapper 
-                    .footer__copyright 
-                        .footer__logo
-                            img.footer__logo-img(src="images/Point-logo.svg", alt="Логотип приложения Point", width="105", height="48")
-                        p © 2021. All Rights Reserved
-                    .footer__cookies 
-                        p Заходя на сайт, вы даете согласие на использование файлов cookie и иных данных
-                        p Политика конфиденциальности
-                    .footer__links
-                        p Служба заботы
-                        ul.footer__links-list
-                            li.footer__links-list-iterm
-                                a.footer__links-list-link(href="#") 
-                                    img(src="images/facebook_logo.svg", alt="Логотип Facebook", width="40", height="40")
-                            li.footer__links-list-iterm
-                                a.footer__links-list-link(href="#") 
-                                    img(src="images/instagram_logo.svg", alt="Логотип Instagram", width="40", height="40")
-                            li.footer__links-list-iterm
-                                a.footer__links-list-link(href="#") 
-                                    img(src="images/twitter_logo.svg", alt="Логотип Twitter", width="40", height="40")
+            .footer__wrapper 
+                .footer__copyright 
+                    .footer__logo
+                        img.footer__logo-img(src="images/Point-logo.svg", alt="Логотип приложения Point", width="105", height="48")
+                    p © 2021. All Rights Reserved
+                .footer__cookies 
+                    p Заходя на сайт, вы даете согласие на использование файлов cookie и иных данных
+                    a.footer__cookies-link(href="#") Политика конфиденциальности
+                .footer__links
+                    a.footer__links(href="#") Служба заботы
+                    ul.footer__links-list
+                        li.footer__links-list-iterm
+                            a.footer__links-list-link(href="#") 
+                                img.footer__links-list-link-img(src="images/facebook_logo.svg", alt="Логотип Facebook", width="40", height="40")
+                        li.footer__links-list-iterm
+                            a.footer__links-list-link(href="#") 
+                                img.footer__links-list-link-img(src="images/instagram_logo.svg", alt="Логотип Instagram", width="40", height="40")
+                        li.footer__links-list-iterm
+                            a.footer__links-list-link(href="#") 
+                                img.footer__links-list-link-img(src="images/twitter_logo.svg", alt="Логотип Twitter", width="40", height="40")
         script(src="js/main.min.js")

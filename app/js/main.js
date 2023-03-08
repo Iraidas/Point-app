@@ -15,3 +15,17 @@ video.addEventListener('click', function() {
     else 
         video.pause();
 })
+
+let accor = document.querySelectorAll(".questions__accordion");
+
+for (let i = 0; i < accor.length; i++) {
+  accor[i].addEventListener("click", function() {
+    this.classList.toggle("questions__active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}

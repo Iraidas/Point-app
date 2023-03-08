@@ -1,0 +1,37 @@
+.footer
+	margin-top: 120px
+	border: 1px solid #E1F0EE
+	backdrop-filter: blur(100px)
+	&__wrapper
+		display: grid
+		padding: 30px 100px
+		grid-template-columns: repeat(3, 1fr)
+	&__copyright
+		@extend %gray-text
+		font-size: 25px
+		line-height: 34px
+	&__cookies
+		display: flex
+		flex-direction: column
+		@extend %gray-text
+		text-align: center
+		font-size: 16px
+		line-height: 22px
+	&__cookies-link
+		@extend %btn-color
+		margin-top: 20px
+	&__links
+		text-align: end
+		@extend %btn-color
+		font-size: 25px
+		line-height: 34px
+	&__links-list
+		display: flex
+		justify-content: flex-end
+		gap: 0 17px
+		margin-top: 20px
+	&__links-list-link-img
+		&:hover
+			transform: scale(1.03, 1.03)
+
+

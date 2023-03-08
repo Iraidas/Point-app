@@ -1,0 +1,50 @@
+.questions
+    padding: 120px 0 0
+    &__wrapper
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+    &__title
+        @extend %title-font
+        font-size: 40px
+        line-height: 44px
+        margin-bottom: 80px
+        line-height: 107.9%
+    &__button-group
+        max-width: 765px
+        width: 100%
+    &__accordion
+        @extend %title-font
+        border-top: 1px solid #C6E1F6 !important
+        font-weight: 600
+        font-size: 32px
+        background: rgba(0, 0, 0, 0)
+        cursor: pointer
+        padding: 20px 0 0
+        line-height: 148.19%
+        width: 100%
+        border: none
+        text-align: left
+        outline: none
+        transition: 0.4s
+        &::after
+            content: url('../images/plus_marker.svg')
+            font-weight: bold
+            float: right
+            text-align: start
+            margin-left: 5px
+    &__active
+        &::after
+            content: url('../images/cross_marker.svg')
+    &__panel
+        font-size: 15px
+        line-height: 20px
+        max-width: 658px
+        color: #000
+        margin-bottom: 20px
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.4s ease-out
+    &__line
+        border-top: 1px solid #C6E1F6 !important

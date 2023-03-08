@@ -14,16 +14,21 @@
         font-size: 25px
         line-height: 34px
     &__player
-        position: relative
-        max-width: 594px
-    &__sorce
-        width: 100%
+        min-height: 362px
         height: 100%
+        max-width: 594px
+        width: 100%
     &__video
+        overflow: hidden
+        object-fit: inherit
         border-end-end-radius: 100% 190px
         border-end-start-radius: 100% 190px
         max-width: 594px
+        max-height: 362px
         height: 100%
+        width: 100%
+    &__sorce 
+        overflow: hidden
     &__video-mute-button
         position: absolute
         z-index: 10

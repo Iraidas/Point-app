@@ -31,13 +31,13 @@
     &__link
         display: block
         @extend %title-font
-        min-width: 390px
+        max-width: 390px
         background: #226699
         color: #fff
         border-radius: 5px
         font-size: 18px
         line-height: 21px
-        padding: 15px 0
+        padding: 15px 36px
         text-align: center
         &:hover
             transform: scale(1.03, 1.03) 
@@ -49,3 +49,22 @@
         color: #434958
     // &__wrapper
     // &__list-item-img
+
+@media screen and (max-width: 768px)
+    .requests
+        &__box
+            border-radius: 40px
+            padding: 50px 0 35px
+        &__title
+            font-size: 24px
+            line-height: 26px
+            padding: 0
+        &__links
+            padding-top: 25px
+        &__link
+            display: inline-block
+            font-size: 14px
+            line-height: 16px
+        &__link-caption
+            font-size: 12px
+            line-height: 16px

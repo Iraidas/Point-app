@@ -9,21 +9,22 @@ html(lang="ru")
     body
         header.header
             .container
-                .header__wrapper 
-                    .header__logo
-                        img.header__logo-img(src="images/Point-logo.svg", alt="Логотип приложения Point", width="105", height="48")
-                    button(type="button").header__burger-menu
-                        span.header__burger-menu-span
-                        span.header__burger-menu-span
-                        span.header__burger-menu-span
+                .header__wrapper
+                    .header__top 
+                        .header__logo
+                            img.header__logo-img(src="images/Point-logo.svg", alt="Логотип приложения Point", width="105", height="48")
+                        button(type="button").header__burger-menu
+                            span.header__burger-menu-span
+                            span.header__burger-menu-span
+                            span.header__burger-menu-span
                     nav.header__nav
                         ul.header__list
                             li.header__list-item
                                 a.header__list-link(href="#") О приложении
                             li.header__list-item
-                                a.header__list-link(href="#") Преимущества
+                                a.header__list-link(href="#superiority") Преимущества
                             li.header__list-item
-                                a.header__list-link(href="#") Наши психологи
+                                a.header__list-link(href="#our-psychologists") Наши психологи
                             li.header__list-item
                                 a.header__list-link(href="#") Скачать приложение
         main.main
@@ -47,6 +48,9 @@ html(lang="ru")
                                 .easy__step-description
                                     h2.easy__title Удобно <span class="blue-text-color">и просто</span>
                                     p.easy__caption Point — это современное приложение, в котором вы можете получить психологическую поддержку, когда и где вам удобно.
+                                .easy__step-images
+                                    img.easy__step-img(src="images/iPhone_bg-1.png", alt="Айфон", width="240", height="615")
+                                .easy__step-text
                                     h3.easy__subtitle Установите приложение
                                     p.easy__subtitle-caption Скачайте приложение на ваш смартфон и пройдите быструю регистрацию.
                                     .easy__links
@@ -54,16 +58,14 @@ html(lang="ru")
                                             img.easy__link-img(src="images/app-store.png", alt="Ссылка App Store", width="200", height="60")
                                         a.easy__link(href="#") 
                                             img.easy__link-img(src="images/google-play.png", alt="Ссылка Google Play", width="200", height="60")
-                                .easy__step-images
-                                    img.easy__step-img(src="images/iPhone_bg-1.png", alt="Айфон", width="240", height="615")
                             .easy__step
-                                .easy__step-description
-                                    h3.easy__subtitle Выберите специалиста
-                                    p.easy__subtitle-caption Просматривайте профили психологов и выбирайте наиболее подходящих по квалификации, рейтингу, цене и запросам, с которыми они работают.
                                 .easy__step-images
                                     img.easy__step-img(src="images/iPhone_bg-2.png", alt="Айфон", width="240", height="615")
+                                .easy__step-text
+                                    h3.easy__subtitle Выберите специалиста
+                                    p.easy__subtitle-caption Просматривайте профили психологов и выбирайте наиболее подходящих по квалификации, рейтингу, цене и запросам, с которыми они работают.
                             .easy__step
-                                .easy__step-description
+                                .easy__step-text
                                     h3.easy__subtitle Позвоните психологу
                                     p.easy__subtitle-caption Если психолог онлайн, значит он готов помочь сейчас, без предварительной договоренности и согласования.
                                     .easy__links
@@ -107,7 +109,7 @@ html(lang="ru")
                             .container
                                 a.requests__link(href="#") Хочу решить свою ситуацию *
                                 p.requests__link-caption * Первые 10 минут консультации бесплатно
-                section.superiority
+                section.superiority#superiority
                     .container 
                         .superiority__wrapper
                             h2.superiority__title Чем Point лучше <span class="blue-text-color">других сервисов и сайтов?</span>
@@ -166,7 +168,7 @@ html(lang="ru")
                                 img.formats__item-img(src="images/formats_iPhone-2.png", alt="Аудиозвонок", width="332", height="618")
                                 h3.formats__item-title Аудиозвонок
                                 p.formats__item-caption Позвоните специалисту анонимно, без видео и получите исчерпывающую консультацию.
-                section.our-psychologists
+                section.our-psychologists#our-psychologists
                     .container 
                         .our-psychologists__wrapper
                             h2.our-psychologists__title Наши <span class="blue-text-color">психологи</span>

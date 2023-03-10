@@ -7,7 +7,7 @@
     &__list
         display: flex
         flex-wrap: wrap
-        gap: 75px 88px
+        gap: 50px 88px
     &__list-item
         display: flex
         gap: 25px 40px
@@ -124,3 +124,34 @@
             transform: scale(1.03, 1.03) 
 
 
+@media screen and (max-width: 768px)
+    .guarantees
+        padding-top: 0px
+        &__title 
+            font-size: 24px
+            line-height: 26px
+            padding-bottom: 35px
+        &__list-item
+            flex-direction: column 
+        &__list-item-title
+            font-size: 18px
+            line-height: 19px
+        &__list-item-caption
+            font-size: 15px
+            line-height: 20px
+
+    .specialists
+        padding-top: 50px
+        .container
+            padding: 0
+        &__cards
+            grid-template-rows: repeat(3, 1fr)
+            grid-template-columns: 1fr
+        &__card
+            padding: 50px 20px 40px
+            border-radius: 40px
+        &__achievements-list
+            font-size: 15px
+            line-height: 20px
+        &__link
+            margin: 0 20px

@@ -50,3 +50,29 @@
 			transform: scale(1.03, 1.03) 
 	// &__caption-img
 	// &__wrapper
+
+@media screen and (max-width: 768px)
+	.our-psychologists
+		padding: 50px 0 115px
+		border-radius: 40px
+		&__title
+			font-size: 24px
+			line-height: 26px
+		&__text
+			font-size: 15px
+			line-height: 20px
+			&::before
+				height: 20vw
+				width: auto
+				left: 0 
+				right: 0
+		&__caption
+			flex-direction: column
+			align-items: center
+			img
+				object-fit: contain
+				height: auto
+		&__link
+			font-size: 14px
+			line-height: 16px
+			max-width: 227px

@@ -29,14 +29,19 @@
         outline: none
         transition: 0.4s
         &::after
-            content: url('../images/plus_marker.svg')
-            font-weight: bold
+            content: ''
+            background-image: url('../images/plus_marker.svg')
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
             float: right
             text-align: start
             margin-left: 5px
     &__active
         &::after
-            content: url('../images/cross_marker.svg')
+            content: ''
+            background-image: url('../images/cross_marker.svg')
     &__panel
         font-size: 15px
         line-height: 20px
@@ -48,3 +53,23 @@
         transition: max-height 0.4s ease-out
     &__line
         border-top: 1px solid #C6E1F6 !important
+
+@media screen and (max-width: 768px)
+    .questions
+        padding: 100px 0 0
+        &__title
+            margin-bottom: 15px
+            font-size: 24px
+            line-height: 26px
+        &__accordion
+            display: flex
+            font-size: 18px
+            line-height: 19px
+            margin-top: 20px
+            padding: 20px 0 0px
+            &::after
+                min-height: 35px
+                min-width: 35px
+        &__panel
+            padding-top: 10px
+            margin-bottom: 10px

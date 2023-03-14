@@ -28,7 +28,6 @@ let burgerNav = document.querySelector(".header__nav")
 let classes = burgerBtn.classList;
 burgerBtn.addEventListener('click', function () {
   let result = classes.toggle("header__burger-menu-active");
-  result ? 'added' : 'remover'
   if (result == true) {
     burgerNav.style.height = "240px"
     burgerNav.style.opacity = "1"

@@ -105,8 +105,8 @@ html(lang="ru")
                                         img.requests__list-item-img(src="images/request_image-6.svg", alt="Иконка воспитание", width="320", height="330")
                                         h3 Воспитание детей
                                         p.requests__list-item-caption Психолог подскажет, как решить компромиссную ситуацию с ребенком и достичь гармонии в общении с ним
-                        .requests__links
-                            .container
+                        .container
+                            .requests__links
                                 a.requests__link(href="#") Хочу решить свою ситуацию *
                                 p.requests__link-caption * Первые 10 минут консультации бесплатно
                 section.superiority#superiority
@@ -294,7 +294,8 @@ html(lang="ru")
                                                 span.specialists__tag переживания
                                                 span.specialists__tag депрессия
                                             a.specialists__card-link(href="#") Подробнее о специалисте
-                                    a.specialists__link(href="#") Все специалисты
+                                    .container
+                                        a.specialists__link(href="#") Все специалисты
                 section.questions
                     .container 
                         .questions__wrapper

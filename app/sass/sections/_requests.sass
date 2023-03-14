@@ -28,16 +28,19 @@
         display: flex
         padding-top: 50px
         text-align: center
+        align-items: center
+        flex-direction: column
     &__link
         display: block
         @extend %title-font
         max-width: 390px
         background: #226699
         color: #fff
+        width: 100%
         border-radius: 5px
         font-size: 18px
         line-height: 21px
-        padding: 15px 36px
+        padding: 15px 0px
         text-align: center
         &:hover
             transform: scale(1.03, 1.03) 
@@ -63,6 +66,7 @@
             padding-top: 25px
         &__link
             display: inline-block
+            max-width: 279px
             font-size: 14px
             line-height: 16px
         &__link-caption

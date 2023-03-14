@@ -127,7 +127,7 @@
 @media screen and (max-width: 768px)
     .guarantees
         padding-top: 0px
-        &__title 
+        &__title
             font-size: 24px
             line-height: 26px
             padding-bottom: 35px
@@ -142,16 +142,18 @@
 
     .specialists
         padding-top: 50px
-        .container
+        +.container
             padding: 0
         &__cards
             grid-template-rows: repeat(3, 1fr)
             grid-template-columns: 1fr
+            justify-items: center
         &__card
+            max-width: 320px
             padding: 50px 20px 40px
             border-radius: 40px
         &__achievements-list
             font-size: 15px
             line-height: 20px
         &__link
-            margin: 0 20px
+            margin-top: 20px

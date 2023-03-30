@@ -31,6 +31,8 @@ burgerBtn.addEventListener('click', function () {
   if (result == true) {
     burgerNav.style.height = "240px"
     burgerNav.style.opacity = "1"
+    burgerNav.focus();
+
   }
     else {
       burgerNav.style.height = "0px"
@@ -40,7 +42,7 @@ burgerBtn.addEventListener('click', function () {
 
 
 
-// Аккордион для вопросов
+// Аккордеон для вопросов
 
 let accor = document.querySelectorAll(".questions__accordion");
 
@@ -55,3 +57,27 @@ for (let i = 0; i < accor.length; i++) {
     } 
   });
 }
+
+
+// Слайдер
+
+document.addEventListener('DOMContentLoaded', () => {
+  const width = window.innerWidth
+  console.log(width);
+  if (width < 768){
+    const slider = new Swiper(
+      '.specialists__wrapper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true, 
+        },
+        breakpoints: {
+          680: {
+            slidesPerView: 2,
+          }
+        }
+    })
+  }
+})

@@ -5,7 +5,8 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Point app
-        link(rel="stylesheet" href="css/style.min.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        link(rel="stylesheet" href="css/style.min.css") 
     body
         header.header
             .container
@@ -13,20 +14,20 @@ html(lang="ru")
                     .header__top 
                         .header__logo
                             img.header__logo-img(src="images/Point-logo.svg", alt="Логотип приложения Point", width="105", height="48")
-                        button(type="button").header__burger-menu
-                            span.header__burger-menu-span
-                            span.header__burger-menu-span
-                            span.header__burger-menu-span
+                        button(type="button" aria-haspopup="true" aria-expanded="false" href="#").header__burger-menu
+                            span.header__burger-menu-span(aria-hidden="true")
+                            span.header__burger-menu-span(aria-hidden="true")
+                            span.header__burger-menu-span(aria-hidden="true")
                     nav.header__nav
                         ul.header__list
                             li.header__list-item
-                                a.header__list-link(href="#easy") О приложении
+                                a.header__list-link(href="#easy" tabindex="-1") О приложении
                             li.header__list-item
-                                a.header__list-link(href="#superiority") Преимущества
+                                a.header__list-link(href="#superiority" tabindex="-1") Преимущества
                             li.header__list-item
-                                a.header__list-link(href="#our-psychologists") Наши психологи
+                                a.header__list-link(href="#our-psychologists" tabindex="-1") Наши психологи
                             li.header__list-item
-                                a.header__list-link(href="#promo") Скачать приложение
+                                a.header__list-link(href="#promo" tabindex="-1") Скачать приложение
         main.main
             .main__wrapper
                 section.preview
@@ -223,79 +224,83 @@ html(lang="ru")
                                         p.guarantees__list-item-caption Сочувствуем вам, сопереживаем с вами, слушаем и слышим вас.
                         .specialists
                             .container 
-                                .specialists__wrapper 
-                                    .specialists__cards
-                                        .specialists__card 
-                                            figure.specialists__photo
-                                                img(src="images/svetlana-shevchenko.png", alt="Фотография Светланы Шевченко", width="280", height="280")
-                                                figcaption Светлана Шевченко
-                                            ul.specialists__achievements-list
-                                                li.specialists__achievements-list-item 8 лет опыта работы
-                                                li.specialists__achievements-list-item Кандидат психологических наук
-                                                li.specialists__achievements-list-item Психология, экофасилитация
-                                            .specialists__prices 
-                                                .specialists__price-per-hour
-                                                    p <span class="specialists__big-price">12</span> грн / мин
-                                                    p.specialists__price-gray Минута консультации
-                                                .specialists__price-per-minute
-                                                    p <span class="specialists__big-price">600</span> грн / 50 мин
-                                                    p.specialists__price-gray Полноценная консультация
-                                            .specialists__tags 
-                                                span.specialists__tag мышление
-                                                span.specialists__tag воспитание
-                                                span.specialists__tag отношения
-                                                span.specialists__tag карьера
-                                                span.specialists__tag переживания
-                                                span.specialists__tag депрессия
-                                            a.specialists__card-link(href="#") Подробнее о специалисте
-                                        .specialists__card 
-                                            figure.specialists__photo
-                                                img(src="images/pavel-lushin.png", alt="Фотография Павла Лушина", width="280", height="280")
-                                                figcaption Павел Лушин
-                                            ul.specialists__achievements-list
-                                                li.specialists__achievements-list-item 35 лет опыта работы
-                                                li.specialists__achievements-list-item Доктор психологических наук
-                                                li.specialists__achievements-list-item Психология
-                                            .specialists__prices 
-                                                .specialists__price-per-hour
-                                                    p <span class="specialists__big-price">100</span> грн / мин
-                                                    p.specialists__price-gray Минута консультации
-                                                .specialists__price-per-minute
-                                                    p <span class="specialists__big-price">5000</span> грн / 50 мин
-                                                    p.specialists__price-gray Полноценная консультация
-                                            .specialists__tags 
-                                                span.specialists__tag мышление
-                                                span.specialists__tag воспитание
-                                                span.specialists__tag отношения
-                                                span.specialists__tag карьера
-                                                span.specialists__tag переживания
-                                                span.specialists__tag депрессия
-                                            a.specialists__card-link(href="#") Подробнее о специалисте
-                                        .specialists__card 
-                                            figure.specialists__photo
-                                                img(src="images/wanda-buganova.png", alt="Фотография Ванды Бугановой", width="280", height="280")
-                                                figcaption Ванда Буганова
-                                            ul.specialists__achievements-list
-                                                li.specialists__achievements-list-item 31 год опыта работы
-                                                li.specialists__achievements-list-item Кандидат психологических наук
-                                                li.specialists__achievements-list-item Психология, экофасилитация
-                                            .specialists__prices 
-                                                .specialists__price-per-hour
-                                                    p <span class="specialists__big-price">30</span> грн / мин
-                                                    p.specialists__price-gray Минута консультации
-                                                .specialists__price-per-minute
-                                                    p <span class="specialists__big-price">1500</span> грн / 50 мин
-                                                    p.specialists__price-gray Полноценная консультация
-                                            .specialists__tags 
-                                                span.specialists__tag мышление
-                                                span.specialists__tag воспитание
-                                                span.specialists__tag отношения
-                                                span.specialists__tag карьера
-                                                span.specialists__tag переживания
-                                                span.specialists__tag депрессия
-                                            a.specialists__card-link(href="#") Подробнее о специалисте
+                                .specialists__wrapper.swiper-container
+                                    .specialists__cards.swiper-wrapper
+                                        .specialists__card-wrapper.swiper-slide
+                                            .specialists__card
+                                                figure.specialists__photo
+                                                    img(src="images/svetlana-shevchenko.png", alt="Фотография Светланы Шевченко", width="280", height="280")
+                                                    figcaption Светлана Шевченко
+                                                ul.specialists__achievements-list
+                                                    li.specialists__achievements-list-item 8 лет опыта работы
+                                                    li.specialists__achievements-list-item Кандидат психологических наук
+                                                    li.specialists__achievements-list-item Психология, экофасилитация
+                                                .specialists__prices 
+                                                    .specialists__price-per-hour
+                                                        p <span class="specialists__big-price">12</span> грн / мин
+                                                        p.specialists__price-gray Минута консультации
+                                                    .specialists__price-per-minute
+                                                        p <span class="specialists__big-price">600</span> грн / 50 мин
+                                                        p.specialists__price-gray Полноценная консультация
+                                                .specialists__tags 
+                                                    span.specialists__tag мышление
+                                                    span.specialists__tag воспитание
+                                                    span.specialists__tag отношения
+                                                    span.specialists__tag карьера
+                                                    span.specialists__tag переживания
+                                                    span.specialists__tag депрессия
+                                                a.specialists__card-link(href="#") Подробнее о специалисте
+                                        .specialists__card-wrapper.swiper-slide
+                                            .specialists__card
+                                                figure.specialists__photo
+                                                    img(src="images/pavel-lushin.png", alt="Фотография Павла Лушина", width="280", height="280")
+                                                    figcaption Павел Лушин
+                                                ul.specialists__achievements-list
+                                                    li.specialists__achievements-list-item 35 лет опыта работы
+                                                    li.specialists__achievements-list-item Доктор психологических наук
+                                                    li.specialists__achievements-list-item Психология
+                                                .specialists__prices 
+                                                    .specialists__price-per-hour
+                                                        p <span class="specialists__big-price">100</span> грн / мин
+                                                        p.specialists__price-gray Минута консультации
+                                                    .specialists__price-per-minute
+                                                        p <span class="specialists__big-price">5000</span> грн / 50 мин
+                                                        p.specialists__price-gray Полноценная консультация
+                                                .specialists__tags 
+                                                    span.specialists__tag мышление
+                                                    span.specialists__tag воспитание
+                                                    span.specialists__tag отношения
+                                                    span.specialists__tag карьера
+                                                    span.specialists__tag переживания
+                                                    span.specialists__tag депрессия
+                                                a.specialists__card-link(href="#") Подробнее о специалисте
+                                        .specialists__card-wrapper.swiper-slide
+                                            .specialists__card
+                                                figure.specialists__photo
+                                                    img(src="images/wanda-buganova.png", alt="Фотография Ванды Бугановой", width="280", height="280")
+                                                    figcaption Ванда Буганова
+                                                ul.specialists__achievements-list
+                                                    li.specialists__achievements-list-item 31 год опыта работы
+                                                    li.specialists__achievements-list-item Кандидат психологических наук
+                                                    li.specialists__achievements-list-item Психология, экофасилитация
+                                                .specialists__prices 
+                                                    .specialists__price-per-hour
+                                                        p <span class="specialists__big-price">30</span> грн / мин
+                                                        p.specialists__price-gray Минута консультации
+                                                    .specialists__price-per-minute
+                                                        p <span class="specialists__big-price">1500</span> грн / 50 мин
+                                                        p.specialists__price-gray Полноценная консультация
+                                                .specialists__tags 
+                                                    span.specialists__tag мышление
+                                                    span.specialists__tag воспитание
+                                                    span.specialists__tag отношения
+                                                    span.specialists__tag карьера
+                                                    span.specialists__tag переживания
+                                                    span.specialists__tag депрессия
+                                                a.specialists__card-link(href="#") Подробнее о специалисте
                                     .container
                                         a.specialists__link(href="#") Все специалисты
+                                    .swiper-pagination
                 section.questions
                     .container 
                         .questions__wrapper
@@ -371,4 +376,5 @@ html(lang="ru")
                         li.footer__links-list-iterm
                             a.footer__links-list-link(href="#") 
                                 img.footer__links-list-link-img(src="images/twitter_logo.svg", alt="Логотип Twitter", width="40", height="40")
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
         script(src="js/main.min.js")

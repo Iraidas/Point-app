@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -13,14 +14,14 @@
         <div class="header__wrapper">
           <div class="header__top"> 
             <div class="header__logo"><img class="header__logo-img" src="images/Point-logo.svg" alt="Логотип приложения Point" width="105" height="48"></div>
-            <button class="header__burger-menu" type="button"><span class="header__burger-menu-span"></span><span class="header__burger-menu-span"></span><span class="header__burger-menu-span"></span></button>
+            <button class="header__burger-menu" type="button" aria-haspopup="true" aria-expanded="false" href="#"><span class="header__burger-menu-span" aria-hidden="true"></span><span class="header__burger-menu-span" aria-hidden="true"></span><span class="header__burger-menu-span" aria-hidden="true"></span></button>
           </div>
           <nav class="header__nav">
             <ul class="header__list">
-              <li class="header__list-item"><a class="header__list-link" href="#easy">О приложении</a></li>
-              <li class="header__list-item"><a class="header__list-link" href="#superiority">Преимущества</a></li>
-              <li class="header__list-item"><a class="header__list-link" href="#our-psychologists">Наши психологи</a></li>
-              <li class="header__list-item"><a class="header__list-link" href="#promo">Скачать приложение</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#easy" tabindex="-1">О приложении</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#superiority" tabindex="-1">Преимущества</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#our-psychologists" tabindex="-1">Наши психологи</a></li>
+              <li class="header__list-item"><a class="header__list-link" href="#promo" tabindex="-1">Скачать приложение</a></li>
             </ul>
           </nav>
         </div>
@@ -255,73 +256,80 @@
             </div>
             <div class="specialists">
               <div class="container"> 
-                <div class="specialists__wrapper"> 
-                  <div class="specialists__cards">
-                    <div class="specialists__card"> 
-                      <figure class="specialists__photo"><img src="images/svetlana-shevchenko.png" alt="Фотография Светланы Шевченко" width="280" height="280">
-                        <figcaption>Светлана Шевченко</figcaption>
-                      </figure>
-                      <ul class="specialists__achievements-list">
-                        <li class="specialists__achievements-list-item">8 лет опыта работы</li>
-                        <li class="specialists__achievements-list-item">Кандидат психологических наук</li>
-                        <li class="specialists__achievements-list-item">Психология, экофасилитация</li>
-                      </ul>
-                      <div class="specialists__prices"> 
-                        <div class="specialists__price-per-hour">
-                          <p><span class="specialists__big-price">12</span> грн / мин</p>
-                          <p class="specialists__price-gray">Минута консультации</p>
+                <div class="specialists__wrapper swiper-container">
+                  <div class="specialists__cards swiper-wrapper">
+                    <div class="specialists__card-wrapper swiper-slide">
+                      <div class="specialists__card">
+                        <figure class="specialists__photo"><img src="images/svetlana-shevchenko.png" alt="Фотография Светланы Шевченко" width="280" height="280">
+                          <figcaption>Светлана Шевченко</figcaption>
+                        </figure>
+                        <ul class="specialists__achievements-list">
+                          <li class="specialists__achievements-list-item">8 лет опыта работы</li>
+                          <li class="specialists__achievements-list-item">Кандидат психологических наук</li>
+                          <li class="specialists__achievements-list-item">Психология, экофасилитация</li>
+                        </ul>
+                        <div class="specialists__prices"> 
+                          <div class="specialists__price-per-hour">
+                            <p><span class="specialists__big-price">12</span> грн / мин</p>
+                            <p class="specialists__price-gray">Минута консультации</p>
+                          </div>
+                          <div class="specialists__price-per-minute">
+                            <p><span class="specialists__big-price">600</span> грн / 50 мин</p>
+                            <p class="specialists__price-gray">Полноценная консультация</p>
+                          </div>
                         </div>
-                        <div class="specialists__price-per-minute">
-                          <p><span class="specialists__big-price">600</span> грн / 50 мин</p>
-                          <p class="specialists__price-gray">Полноценная консультация</p>
-                        </div>
+                        <div class="specialists__tags"> <span class="specialists__tag">мышление</span><span class="specialists__tag">воспитание</span><span class="specialists__tag">отношения</span><span class="specialists__tag">карьера</span><span class="specialists__tag">переживания</span><span class="specialists__tag">депрессия</span></div><a class="specialists__card-link" href="#">Подробнее о специалисте</a>
                       </div>
-                      <div class="specialists__tags"> <span class="specialists__tag">мышление</span><span class="specialists__tag">воспитание</span><span class="specialists__tag">отношения</span><span class="specialists__tag">карьера</span><span class="specialists__tag">переживания</span><span class="specialists__tag">депрессия</span></div><a class="specialists__card-link" href="#">Подробнее о специалисте</a>
                     </div>
-                    <div class="specialists__card"> 
-                      <figure class="specialists__photo"><img src="images/pavel-lushin.png" alt="Фотография Павла Лушина" width="280" height="280">
-                        <figcaption>Павел Лушин</figcaption>
-                      </figure>
-                      <ul class="specialists__achievements-list">
-                        <li class="specialists__achievements-list-item">35 лет опыта работы</li>
-                        <li class="specialists__achievements-list-item">Доктор психологических наук</li>
-                        <li class="specialists__achievements-list-item">Психология</li>
-                      </ul>
-                      <div class="specialists__prices"> 
-                        <div class="specialists__price-per-hour">
-                          <p><span class="specialists__big-price">100</span> грн / мин</p>
-                          <p class="specialists__price-gray">Минута консультации</p>
+                    <div class="specialists__card-wrapper swiper-slide">
+                      <div class="specialists__card">
+                        <figure class="specialists__photo"><img src="images/pavel-lushin.png" alt="Фотография Павла Лушина" width="280" height="280">
+                          <figcaption>Павел Лушин</figcaption>
+                        </figure>
+                        <ul class="specialists__achievements-list">
+                          <li class="specialists__achievements-list-item">35 лет опыта работы</li>
+                          <li class="specialists__achievements-list-item">Доктор психологических наук</li>
+                          <li class="specialists__achievements-list-item">Психология</li>
+                        </ul>
+                        <div class="specialists__prices"> 
+                          <div class="specialists__price-per-hour">
+                            <p><span class="specialists__big-price">100</span> грн / мин</p>
+                            <p class="specialists__price-gray">Минута консультации</p>
+                          </div>
+                          <div class="specialists__price-per-minute">
+                            <p><span class="specialists__big-price">5000</span> грн / 50 мин</p>
+                            <p class="specialists__price-gray">Полноценная консультация</p>
+                          </div>
                         </div>
-                        <div class="specialists__price-per-minute">
-                          <p><span class="specialists__big-price">5000</span> грн / 50 мин</p>
-                          <p class="specialists__price-gray">Полноценная консультация</p>
-                        </div>
+                        <div class="specialists__tags"> <span class="specialists__tag">мышление</span><span class="specialists__tag">воспитание</span><span class="specialists__tag">отношения</span><span class="specialists__tag">карьера</span><span class="specialists__tag">переживания</span><span class="specialists__tag">депрессия</span></div><a class="specialists__card-link" href="#">Подробнее о специалисте</a>
                       </div>
-                      <div class="specialists__tags"> <span class="specialists__tag">мышление</span><span class="specialists__tag">воспитание</span><span class="specialists__tag">отношения</span><span class="specialists__tag">карьера</span><span class="specialists__tag">переживания</span><span class="specialists__tag">депрессия</span></div><a class="specialists__card-link" href="#">Подробнее о специалисте</a>
                     </div>
-                    <div class="specialists__card"> 
-                      <figure class="specialists__photo"><img src="images/wanda-buganova.png" alt="Фотография Ванды Бугановой" width="280" height="280">
-                        <figcaption>Ванда Буганова</figcaption>
-                      </figure>
-                      <ul class="specialists__achievements-list">
-                        <li class="specialists__achievements-list-item">31 год опыта работы</li>
-                        <li class="specialists__achievements-list-item">Кандидат психологических наук</li>
-                        <li class="specialists__achievements-list-item">Психология, экофасилитация</li>
-                      </ul>
-                      <div class="specialists__prices"> 
-                        <div class="specialists__price-per-hour">
-                          <p><span class="specialists__big-price">30</span> грн / мин</p>
-                          <p class="specialists__price-gray">Минута консультации</p>
+                    <div class="specialists__card-wrapper swiper-slide">
+                      <div class="specialists__card">
+                        <figure class="specialists__photo"><img src="images/wanda-buganova.png" alt="Фотография Ванды Бугановой" width="280" height="280">
+                          <figcaption>Ванда Буганова</figcaption>
+                        </figure>
+                        <ul class="specialists__achievements-list">
+                          <li class="specialists__achievements-list-item">31 год опыта работы</li>
+                          <li class="specialists__achievements-list-item">Кандидат психологических наук</li>
+                          <li class="specialists__achievements-list-item">Психология, экофасилитация</li>
+                        </ul>
+                        <div class="specialists__prices"> 
+                          <div class="specialists__price-per-hour">
+                            <p><span class="specialists__big-price">30</span> грн / мин</p>
+                            <p class="specialists__price-gray">Минута консультации</p>
+                          </div>
+                          <div class="specialists__price-per-minute">
+                            <p><span class="specialists__big-price">1500</span> грн / 50 мин</p>
+                            <p class="specialists__price-gray">Полноценная консультация</p>
+                          </div>
                         </div>
-                        <div class="specialists__price-per-minute">
-                          <p><span class="specialists__big-price">1500</span> грн / 50 мин</p>
-                          <p class="specialists__price-gray">Полноценная консультация</p>
-                        </div>
+                        <div class="specialists__tags"> <span class="specialists__tag">мышление</span><span class="specialists__tag">воспитание</span><span class="specialists__tag">отношения</span><span class="specialists__tag">карьера</span><span class="specialists__tag">переживания</span><span class="specialists__tag">депрессия</span></div><a class="specialists__card-link" href="#">Подробнее о специалисте</a>
                       </div>
-                      <div class="specialists__tags"> <span class="specialists__tag">мышление</span><span class="specialists__tag">воспитание</span><span class="specialists__tag">отношения</span><span class="specialists__tag">карьера</span><span class="specialists__tag">переживания</span><span class="specialists__tag">депрессия</span></div><a class="specialists__card-link" href="#">Подробнее о специалисте</a>
                     </div>
                   </div>
                   <div class="container"><a class="specialists__link" href="#">Все специалисты</a></div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
@@ -405,6 +413,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

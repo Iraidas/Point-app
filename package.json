@@ -1,21 +1,23 @@
 {
-  "name": "residentialcomplex",
+  "name": "pointapp",
   "version": "1.0.0",
   "description": "- HTML\r - SCSS\r - Gulp",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Iraidas/Residential-complex.git"
+    "url": "git+https://github.com/Iraidas/Point-app.git"
   },
-  "author": "Ira",
+  "author": "Iraida",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Iraidas/Residential-complex/issues"
+    "url": "https://github.com/Iraidas/Point-app/issues"
   },
-  "homepage": "https://github.com/Iraidas/Residential-complex#readme",
+  "homepage": "https://github.com/Iraidas/Point-app#readme",
   "devDependencies": {
     "browser-sync": "^2.27.11",
     "del": "^7.0.0",

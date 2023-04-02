@@ -23,8 +23,9 @@
         font-weight: 600
         size: 18px
         &:hover
-            transform: scale(1.02, 1.02)
-            color: #434958
+            @media #{mouse-device}
+                transform: scale(1.02, 1.02)
+                color: #434958
 
 @media screen and (max-width: 768px)
     .header

@@ -43,7 +43,8 @@
         padding: 15px 0px
         text-align: center
         &:hover
-            transform: scale(1.03, 1.03) 
+            @media #{mouse-device}
+                transform: scale(1.03, 1.03) 
     &__link-caption
         margin-top: 15px
         font-weight: 400
@@ -62,6 +63,14 @@
             font-size: 24px
             line-height: 26px
             padding: 0
+        &__list
+            gap: 0px 40px
+        &__list-item
+            max-width: 280px
+        &__list-item-title
+            font-size: 18px
+        &__list-item-caption
+            font-size: 15px
         &__links
             padding-top: 25px
         &__link

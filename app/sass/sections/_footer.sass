@@ -1,10 +1,9 @@
 .footer
 	margin-top: 120px
 	border: 1px solid #E1F0EE
-	backdrop-filter: blur(100px)
 	&__wrapper
 		display: grid
-		padding: 30px 100px
+		padding: 30px 0px
 		grid-template-columns: repeat(3, 1fr)
 	&__copyright
 		@extend %gray-text
@@ -32,7 +31,8 @@
 		margin-top: 20px
 	&__links-list-link-img
 		&:hover
-			transform: scale(1.03, 1.03)
+			@media #{mouse-device}
+				transform: scale(1.03, 1.03)
 
 
 @media screen and (max-width: 768px)
@@ -40,7 +40,7 @@
 		&__wrapper
 			display: grid
 			gap: 15px
-			padding: 15px 20px
+			padding: 15px 0px
 			grid-template-columns: 2fr 1fr
 		&__logo
 			max-width: 70px

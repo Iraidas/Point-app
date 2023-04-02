@@ -47,7 +47,8 @@
 		text-align: center
 		border: 2.5px solid #C6E1F6
 		&:hover
-			transform: scale(1.03, 1.03) 
+			@media #{mouse-device}
+				transform: scale(1.03, 1.03) 
 	// &__caption-img
 	// &__wrapper
 

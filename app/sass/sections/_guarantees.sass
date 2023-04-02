@@ -107,7 +107,8 @@
         background: #226699
         color: #fff
         &:hover
-            transform: scale(1.03, 1.03) 
+            @media #{mouse-device}
+                transform: scale(1.03, 1.03) 
     &__link
         display: block
         @extend %title-font
@@ -121,7 +122,8 @@
         text-align: center
         border: 2.5px solid #C6E1F6
         &:hover
-            transform: scale(1.03, 1.03) 
+            @media #{mouse-device}
+                transform: scale(1.03, 1.03) 
 
 .swiper-slide
     width: auto
@@ -135,8 +137,11 @@
             font-size: 24px
             line-height: 26px
             padding-bottom: 35px
+        &__list
+            gap: 50px 40px
         &__list-item
             flex-direction: column 
+            max-width: 280px
         &__list-item-title
             font-size: 18px
             line-height: 19px

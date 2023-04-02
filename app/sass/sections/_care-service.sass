@@ -19,7 +19,8 @@
 		font-weight: 700
 		padding: 10px 45px
 		&:hover
-			transform: scale(1.03, 1.03) 
+			@media #{mouse-device}
+				transform: scale(1.03, 1.03) 
 	&__list-item-link-text 
 		@extend %title-font
 		font-size: 23px
@@ -37,9 +38,8 @@
 			line-height: 26px
 		&__list
 			margin-top: 50px
-			justify-items: center
-			grid-template-columns: 1fr
-			grid-template-rows: repeat(3, 1fr)
+			justify-content: center
+			grid-template-columns: repeat(auto-fill, 280px)
 		&__list-item
 			min-width: 240px
 			max-width: 280px

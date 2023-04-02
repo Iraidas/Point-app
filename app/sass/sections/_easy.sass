@@ -70,7 +70,8 @@
         margin-right: 15px
     &__link-img
         &:hover
-            transform: scale(1.03, 1.03) 
+            @media #{mouse-device}
+                transform: scale(1.03, 1.03) 
     &__step-images
         display: flex
         z-index: 10

@@ -45,7 +45,8 @@
         margin-right: 15px
     &__link-img
         &:hover
-            transform: scale(1.03, 1.03) 
+            @media #{mouse-device}
+                transform: scale(1.03, 1.03) 
 
 
 @media screen and (max-width: 768px)

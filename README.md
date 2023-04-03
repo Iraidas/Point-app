@@ -14,6 +14,6 @@
         </li>
     </ul>
     <h3>Показатели скорости загрузки:</h3>
-    <img src="page-speed-mobile.jpg" alt="" width="300">
-    <img src="page-speed-desktop.jpg" alt="" width="300">
+    <img src="page-speed-mobile.jpg" alt=""width="400">
+    <img src="page-speed-desktop.jpg" alt=""width="400">
 </body>
